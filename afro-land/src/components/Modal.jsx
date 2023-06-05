@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Modal = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -49,6 +50,7 @@ const Modal = ({ onClose }) => {
     if (Object.keys(errors).length === 0) {
       // Form is valid, proceed with submission
       console.log("Form is valid. Submitting...");
+      console.log("data is ", formData);
     } else {
       // Form has errors, display them to the user
       console.log("Form has errors. Please fix them.");
@@ -76,11 +78,19 @@ const Modal = ({ onClose }) => {
   };
 
   const isValidEmail = (email) => {
-    // Perform email validation logic here
+    // Regular expression pattern for email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Check if the email matches the pattern
+    return emailPattern.test(email);
   };
 
   const isValidPhone = (phone) => {
-    // Perform phone validation logic here
+    // Regular expression pattern for phone number validation
+    const phonePattern = /^\+251\d{9}$/;
+
+    // Check if the phone number matches the pattern
+    return phonePattern.test(phone);
   };
 
   return (
@@ -109,7 +119,7 @@ const Modal = ({ onClose }) => {
           </svg>
         </button>
         <div className="p-8 overflow-auto md:max-h-fit max-h-96">
-          <h2 className="text-lg font-semibold mb-6">Contact Information</h2>
+          <h2 className="text-lg font-semibold mb-6">Join The Waitlist</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
@@ -197,6 +207,7 @@ const Modal = ({ onClose }) => {
                   formErrors.phone ? "border-red-500" : "border-gray-300"
                 } text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white`}
                 onChange={handleInputChange}
+                defaultValue={"+251"}
                 required
               />
               {formErrors.phone && (

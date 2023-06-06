@@ -63,7 +63,7 @@ const Modal = ({ onClose, showToast }) => {
           firstName: "",
           lastName: "",
           email: "",
-          phone: "251",
+          phone: "+251",
           ageGroup: "",
           profession: "",
         });

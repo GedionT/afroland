@@ -47,8 +47,8 @@ const Modal = ({ onClose, showToast }) => {
 
     if (Object.keys(errors).length === 0) {
       // Form is valid, proceed with submission
-      console.log("Form is valid. Submitting...");
-      console.log("data is ", formData);
+      // console.log("Form is valid. Submitting...");
+      // console.log("data is ", formData);
 
       try {
         const response = await axios.post(
@@ -56,7 +56,7 @@ const Modal = ({ onClose, showToast }) => {
           formData
         );
 
-        console.log("Form data submitted successfully:", response.data);
+        // console.log("Form data submitted successfully:", response.data);
 
         // Reset the form after successful submission
         setFormData({
@@ -72,11 +72,11 @@ const Modal = ({ onClose, showToast }) => {
         showToast();
         handleClose();
       } catch (error) {
-        console.error("Error submitting form data:", error);
+        // console.error("Error submitting form data:", error);
       }
     } else {
       // Form has errors, display them to the user
-      console.log("Form has errors. Please fix them.");
+      // console.log("Form has errors. Please fix them.");
     }
   };
 

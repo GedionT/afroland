@@ -12,12 +12,10 @@ const Personas = () => (
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative ">
       <h2 className={styles.heading2}>
         Multiple persona to conversate with
-        <br className="sm:block hidden" /> some of which are
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Doctors, Lawyers, Business Consultants, Freelancers, Students, and
-          more.
+          Personal Assistant, Health & Fitness, Progamming pal
         </p>
       </div>
     </div>

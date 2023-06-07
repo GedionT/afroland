@@ -68,15 +68,15 @@ const App = () => {
           <div data-aos="fade-right">
           <Stats />
           </div>
-          <div data-aos="fade-right">
-          <Personas />
-          </div>
           <div data-aos="fade-left">
           <Business />
           </div>
-          <div data-aos="fade-up">
-          <CTA />
+          <div data-aos="fade-right">
+          <Personas />
           </div>
+          {/* <div data-aos="fade-up">
+          <CTA />
+          </div> */}
           <div data-aos="fade-up">
           <Footer />
           </div>

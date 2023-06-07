@@ -17,25 +17,25 @@ export const navLinks = [
 
 export const features = [
   {
-    id: "tts",
+    id: "Persona",
     icon: star,
-    title: "text-to-speech",
+    title: "Persona",
     content:
-      "Talk to your AI in human language",
+      "Get help in what you are working with AI that understands your need!",
   },
   {
     id: "stt",
     icon: shield,
     title: "speech-to-text",
     content:
-      "Conversation with an AI that speaks to you. Get answers to your questions in human-like manner.",
+      "You don't always want to write your thoughts, don't worry use audio to speak your mind!",
   },
   {
-    id: "translation",
+    id: "Session",
     icon: send,
-    title: "translation",
+    title: "Session",
     content:
-      "Translate your conversations to local languages",
+      "You never have to worry about if your prompts are lost, we will save it with the generated response.",
   },
 ];
 
@@ -43,9 +43,9 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Ask me any of the questions in regards to head & neck anatomy, physiology, pathology, and treatment.",
-    name: "Dr. Heyaw Mulusew",
-    title: "ENT Doctor",
+      "Tutor me regarding any questions I have to chip designing.",
+    name: "Hiyaw Yonas",
+    title: "Electrical Student",
     img: people01,
   },
   {

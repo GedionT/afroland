@@ -22,15 +22,14 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Save money using, <br className="sm:block hidden" /> AI powered consultancy.
+      What we Give<br className="sm:block hidden" /> AI powered
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right AI persona, you can get the right answers to your questions. Do you need a study partner?
-        or perhaps an immigration lawyer? Are you crafting your freelance profile? or maybe you need a business
-        consultant? We got you covered.
+      From AI Persona tailored to your need to speaking your prompt, we got you covered. With AfroChat we will bring ease
+        and consistent service of Generative AI to your doors. Click down here to give us your feedback.
       </p>
 
-      <Button styles={`mt-10`} />
+      {/* <Button styles={`mt-10`} /> */}
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>
